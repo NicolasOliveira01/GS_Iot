@@ -41,12 +41,10 @@ https://youtu.be/aK1FIkL8JJs
 caso use o ambiente virtual:
 
 venv\Scripts\activate
-ativa o ambiente virtual
-
 pip install -r requirements.txt
-baixa as dependências necessárias para poder usar o projeto
 
 Caso use o seu ambiente:
+
 pip install ultralytics
 pip install opencv-python
 pip install mediapipe
