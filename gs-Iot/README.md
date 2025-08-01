@@ -3,9 +3,6 @@
 ## Vídeo explicando sobre o projeto:
 https://www.youtube.com/watch?v=Czf9ZzN_0nM
 
-caso tenha problema com o vídeo:
-https://drive.google.com/file/d/11YrH8T-DDHxA11jPYnIPSTqn1YxZwcIR/view?usp=drive_link
-
 ## Descrição do problema: detecção tardia de falta de energia
 
 Em muitas comunidades, especialmente nas áreas rurais, periféricas ou em regiões com infraestrutura precária, o monitoramento automatizado da rede elétrica é inexistente ou muito limitado. Nesses locais, a detecção de quedas de energia frequentemente depende exclusivamente da comunicação manual dos moradores, que precisam ligar ou se deslocar até um centro de atendimento para relatar o problema.
