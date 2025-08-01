@@ -1,5 +1,8 @@
 # Detecção de Pessoas com YOLO e Pose Estimation com MediaPipe
 
+## Vídeo explicando sobre o projeto:
+https://www.youtube.com/watch?v=Czf9ZzN_0nM
+
 caso tenha problema com o vídeo:
 https://drive.google.com/file/d/11YrH8T-DDHxA11jPYnIPSTqn1YxZwcIR/view?usp=drive_link
 
