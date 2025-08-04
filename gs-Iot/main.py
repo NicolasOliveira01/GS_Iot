@@ -89,7 +89,7 @@ while cap.isOpened():
             #print(f"crop - {crop}")
             mp_draw.draw_landmarks(crop, results.pose_landmarks, mp_pose.POSE_CONNECTIONS) # desenha os landmarks
 
-        # talvez precise tratar quando o novo recorte for maior ou menor que o recorte original
+        # deixa o crop com o mesmo tamanho do recorte feito no vídeo original
         h, w = y_max - y_min, x_max - x_min
         if crop.shape[:2] != (h, w):
             crop = cv2.resize(crop, (w, h))
@@ -108,6 +108,7 @@ cap.release()
 cv2.destroyAllWindows()
   
 			
+
 
 
 
