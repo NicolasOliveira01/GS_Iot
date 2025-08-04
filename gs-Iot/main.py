@@ -33,7 +33,9 @@ while cap.isOpened():
     # exemplo de boxes: tensor([50.0, 100.0, 200.0, 300.0])
     classes = detections.boxes.cls # 0 é person, 2 é dog
     # tensor([0., 2.])
-    
+
+    """IDENTIFICAÇÃO DAS PESSOAS"""
+	
     person_boxes = [box for box, cls in zip(boxes, classes) if int(cls) == 0]
     # person_boxes tem as coordenadas de somente as pessoas (não tem o recorte)
     # print(f"person_boxes - {person_boxes}") # [tensor([ 281.0838,  486.3299,  541.0790, 1003.5989])]
@@ -57,6 +59,8 @@ while cap.isOpened():
 
     person_crops = []
 
+    """FAZ UM RECORTE"""
+	
     for box in person_boxes: # só atua quando o midiapipe identifica alguma pessoa
         x_min, y_min, x_max, y_max = box # converteu antes o person_boxes para int
         #print(f"Coordenadas - {[x_min, y_min, x_max, y_max]}") # [648, 485, 839, 900]
@@ -101,3 +105,4 @@ cap.release()
 cv2.destroyAllWindows()
   
 			
+
