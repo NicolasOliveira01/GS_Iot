@@ -81,7 +81,9 @@ while cap.isOpened():
             print(f"Pessoa {idx}: Landmarks detectados")
         else:
             print(f"Pessoa {idx}: Nenhum landmark detectado")"""
-        
+
+	""""MIDIAPIPE DESENHA OS LANDMARKS PARA CADA RECORTE"""
+	    
         if results.pose_landmarks:
             # mp.solutions.drawing_utils.draw_landmarks(crop, results.pose_landmarks, mp.solutions.pose.POSE_CONNECTIONS)
             #print(f"crop - {crop}")
@@ -92,7 +94,8 @@ while cap.isOpened():
         if crop.shape[:2] != (h, w):
             crop = cv2.resize(crop, (w, h))
 
-
+	"""RECORTE É COLOCADO NO VÍDEO ORIGINAL"""
+	    
         annotated_frame[y_min:y_max, x_min:x_max] = crop	# coloca o crop já com landmarks de volta no lugar correto	 
 					
     display_frame = cv2.resize(annotated_frame, None, fx=0.5, fy=0.5)
@@ -105,4 +108,5 @@ cap.release()
 cv2.destroyAllWindows()
   
 			
+
 
