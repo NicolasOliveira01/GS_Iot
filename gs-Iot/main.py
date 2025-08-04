@@ -84,7 +84,7 @@ while cap.isOpened():
 
 	""""MIDIAPIPE DESENHA OS LANDMARKS PARA CADA RECORTE"""
 	    
-        if results.pose_landmarks:
+        if results.pose_landmarks: # verifica se o MediaPipe conseguiu detectar os "landmarks"
             # mp.solutions.drawing_utils.draw_landmarks(crop, results.pose_landmarks, mp.solutions.pose.POSE_CONNECTIONS)
             #print(f"crop - {crop}")
             mp_draw.draw_landmarks(crop, results.pose_landmarks, mp_pose.POSE_CONNECTIONS) # desenha os landmarks
@@ -108,5 +108,6 @@ cap.release()
 cv2.destroyAllWindows()
   
 			
+
 
 
